@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --brightorange:hsl(31, 77%, 52%);
+    --dcyan:hsl(184, 100%, 22%);
+    --vdcyan:hsl(179, 100%, 13%);
+    --pcolor:hsla(0, 0%, 100%, 0.75);
+    --vlightgray: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vlightgray);
+}
+p{
+    line-height: 25px;
+    color: var(--pcolor);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main{
+    margin:auto 25px ;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+article{
+    padding: 40px 45px;
+    display: flex;
+    flex-direction: column;
+}
+.firstbox{
+    background-color: var(--brightorange);
+    border-radius: 5px 5px 0px 0px;
+}
+h1{
+    margin: 30px 0px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+}
+.secondbox{
+    background-color: var(--dcyan);
+}
+.thirdbox{
+    background-color: var(--vdcyan);
+    border-radius: 0 0 5px 5px;
+}
+button{
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.btn1{
+    color: var(--brightorange);
+    border: var(--brightorange);
+}
+.btn2{
+    color: var(--dcyan);
+    border: var(--dcyan);
+}
+.btn3{
+    color:var(--vdcyan);
+    border: var(--vdcyan);
+}
+.align{
+    margin-top: auto ;
+}
+.btn1:hover,.btn1:focus{
+    border: solid white;
+    background-color: var(--brightorange);
+    color: var(--pcolor);
+}
+.btn2:hover,.btn2:focus{
+    border: solid white;
+    background-color: var(--dcyan);
+    color: var(--pcolor);
+}
+.btn3:hover,.btn3:focus{
+    border: solid white;
+    background-color: var(--vdcyan);
+    color: var(--pcolor);
+}
+
+@media screen and (min-width:375px) {
+    main{
+        flex-wrap:nowrap;
+        flex-direction:row;
+    }
+    article{
+        max-width: 300px;
+        min-height: 450px;
+    }
+    .firstbox{
+        border-radius: 5px 0px 0px 5px;
+    }
+    .thirdbox{
+        border-radius: 0px 5px 5px 0px;
+    }
+}
